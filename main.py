@@ -277,7 +277,7 @@ def create_notes(topic: str):
     Generate simple notes for a topic (you can later improve with LLM).
     """
     try:
-        text = f\"\"\"# Notes: {topic}
+        text = f"""# Notes: {topic}
 
 ## Summary
 Auto-generated summary for **{topic}**.
@@ -288,7 +288,7 @@ Auto-generated summary for **{topic}**.
 
 ## Example
 Add example code or math here.
-\"\"\"
+"""
         return {"status": "success", "notes": text}
     except Exception as e:
         return {"status": "error", "message": str(e)}
