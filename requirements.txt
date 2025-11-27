@@ -1,0 +1,9 @@
+mcp
+pandas
+numpy
+matplotlib
+scikit-learn
+joblib
+nbformat
+sympy
+tensorflow==2.17.0
